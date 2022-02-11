@@ -1,19 +1,12 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace TanksGB.GameLogic
 {
     public class GameController : MonoBehaviour
     {
-        // Start is called before the first frame update
-        void Start()
+        private void Start()
         {
-        
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-        
+            Debug.Log("Controller");
         }
     }
 }
