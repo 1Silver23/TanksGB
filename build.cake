@@ -16,7 +16,7 @@ Task("Build-Android")
     UnityEditor(
     new UnityEditorArguments
     {
-        ProjectPath = "./source",
+        ProjectPath = "./TanksSource",
         ExecuteMethod = "Tanks.Editor.GameBuilder.BuildAndroid",
         BuildTarget = Android,
         LogFile = "./artifacts/Unity.log",
