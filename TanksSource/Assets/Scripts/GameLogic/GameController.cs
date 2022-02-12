@@ -1,12 +1,23 @@
-﻿using UnityEngine;
+﻿using TanksGB.Data;
+using TanksGB.GameLogic.Systems;
+using UnityEngine;
 
 namespace TanksGB.GameLogic
 {
     public class GameController : MonoBehaviour
     {
+        [SerializeField] private SceneStaticData _staticData;
+
+        public void Construct(SceneStaticData staticData)
+        {
+            _staticData = staticData;
+        }
+
         private void Start()
         {
-            Debug.Log("Controller");
+            var contexts = Contexts.sharedInstance;
+            InitSystems initSystems = new InitSystems(contexts, _staticData);
+            initSystems.Initialize();
         }
     }
 }

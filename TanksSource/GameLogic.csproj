@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <LangVersion>9.0</LangVersion>
@@ -41,8 +41,28 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\GameLogic\Generated\Game\Components\GameHealthComponent.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Generated\Game\Components\GameTeamComponent.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Generated\Game\GameMatcher.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Generated\Input\InputAttribute.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Generated\Game\Components\GameViewComponent.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Generated\Game\GameEntity.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Components\ViewComponent.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Generated\Input\InputContext.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Systems\InitSystems.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Generated\Contexts.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Generated\Game\GameAttribute.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Views\TankView.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Systems\TanksInitSystem.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Generated\Game\GameComponentsLookup.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Generated\Input\InputEntity.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Generated\Game\GameContext.cs" />
      <Compile Include="Assets\Scripts\GameLogic\Components\HealthComponent.cs" />
      <Compile Include="Assets\Scripts\GameLogic\GameController.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Components\TeamComponent.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Generated\Feature.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Generated\Input\InputMatcher.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Generated\Input\InputComponentsLookup.cs" />
      <None Include="Assets\Scripts\GameLogic\GameLogic.asmdef" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\2021.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
@@ -796,19 +816,14 @@
      </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\GameLogic\Generated\Game\Components\GameHealthComponent.cs" />
-    <Compile Include="Assets\Scripts\GameLogic\Generated\Game\GameComponentsLookup.cs" />
-    <Compile Include="Assets\Scripts\GameLogic\Generated\Input\InputComponentsLookup.cs" />
-    <Compile Include="Assets\Scripts\GameLogic\Generated\Game\GameAttribute.cs" />
-    <Compile Include="Assets\Scripts\GameLogic\Generated\Input\InputAttribute.cs" />
-    <Compile Include="Assets\Scripts\GameLogic\Generated\Game\GameContext.cs" />
-    <Compile Include="Assets\Scripts\GameLogic\Generated\Input\InputContext.cs" />
-    <Compile Include="Assets\Scripts\GameLogic\Generated\Game\GameMatcher.cs" />
-    <Compile Include="Assets\Scripts\GameLogic\Generated\Input\InputMatcher.cs" />
-    <Compile Include="Assets\Scripts\GameLogic\Generated\Contexts.cs" />
-    <Compile Include="Assets\Scripts\GameLogic\Generated\Game\GameEntity.cs" />
-    <Compile Include="Assets\Scripts\GameLogic\Generated\Input\InputEntity.cs" />
-    <Compile Include="Assets\Scripts\GameLogic\Generated\Feature.cs" />
+    <ProjectReference Include="Data.csproj">
+      <Project>{d458984a-2a35-53cf-0f1a-756326754680}</Project>
+      <Name>Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="General.csproj">
+      <Project>{61a1019b-3676-7144-a235-ea16e3904d3a}</Project>
+      <Name>General</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

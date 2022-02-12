@@ -6,5 +6,4 @@ namespace TanksGB.GameLogic.Components
     public sealed class HealthComponent:IComponent
     {
     }
-   
 }

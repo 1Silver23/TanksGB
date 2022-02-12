@@ -1,12 +1,7 @@
 {
     "name": "General",
     "rootNamespace": "TanksGB",
-    "references": [
-        "Unity.Addressables",
-        "Unity.ResourceManager",
-        "GameLogic",
-        "Zenject"
-    ],
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

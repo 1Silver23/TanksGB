@@ -813,9 +813,17 @@
      </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Data.csproj">
+      <Project>{d458984a-2a35-53cf-0f1a-756326754680}</Project>
+      <Name>Data</Name>
+    </ProjectReference>
     <ProjectReference Include="Sirenix.OdinInspector.CompatibilityLayer.csproj">
       <Project>{d5ad44c6-f741-93d0-6432-65173f7f083d}</Project>
       <Name>Sirenix.OdinInspector.CompatibilityLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="General.csproj">
+      <Project>{61a1019b-3676-7144-a235-ea16e3904d3a}</Project>
+      <Name>General</Name>
     </ProjectReference>
     <ProjectReference Include="Zenject-Editor.csproj">
       <Project>{df22b599-7817-0528-e8b0-23c3a13ade03}</Project>
@@ -841,9 +849,9 @@
       <Project>{234a5852-9b37-0183-a335-534505290bce}</Project>
       <Name>Zenject</Name>
     </ProjectReference>
-    <ProjectReference Include="General.csproj">
-      <Project>{61a1019b-3676-7144-a235-ea16e3904d3a}</Project>
-      <Name>General</Name>
+    <ProjectReference Include="Core.csproj">
+      <Project>{2e8286c7-f027-b6cb-1814-47b751b4dcaa}</Project>
+      <Name>Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

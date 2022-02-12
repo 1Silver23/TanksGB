@@ -1,7 +1,10 @@
 {
     "name": "GameLogic",
     "rootNamespace": "TanksGB",
-    "references": [],
+    "references": [
+        "GUID:210409e924ce8a44489db370c4276168",
+        "GUID:5a9bd95450994c14d955e9a52b3a1fd0"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

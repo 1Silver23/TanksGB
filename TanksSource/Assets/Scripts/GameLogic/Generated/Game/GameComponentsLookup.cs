@@ -9,14 +9,20 @@
 public static class GameComponentsLookup {
 
     public const int Health = 0;
+    public const int Team = 1;
+    public const int View = 2;
 
-    public const int TotalComponents = 1;
+    public const int TotalComponents = 3;
 
     public static readonly string[] componentNames = {
-        "Health"
+        "Health",
+        "Team",
+        "View"
     };
 
     public static readonly System.Type[] componentTypes = {
-        typeof(TanksGB.GameLogic.Components.HealthComponent)
+        typeof(TanksGB.GameLogic.Components.HealthComponent),
+        typeof(TanksGB.GameLogic.Components.TeamComponent),
+        typeof(TanksGB.GameLogic.Components.ViewComponent)
     };
 }

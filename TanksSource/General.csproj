@@ -41,25 +41,10 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\General\Infrastructure\Game.cs" />
-     <Compile Include="Assets\Scripts\General\Infrastructure\Bootstrapper.cs" />
+     <Compile Include="Assets\Scripts\General\LevelDesign\TankSpawnMarker.cs" />
      <Compile Include="Assets\Scripts\General\UI\LoadingScreen.cs" />
-     <Compile Include="Assets\Scripts\General\Infrastructure\StateMachine\GameStateMachine.cs" />
      <Compile Include="Assets\Scripts\General\UI\StartMenu.cs" />
-     <Compile Include="Assets\Scripts\General\Infrastructure\StateMachine\IState.cs" />
      <Compile Include="Assets\Scripts\General\Calculator.cs" />
-     <Compile Include="Assets\Scripts\General\Infrastructure\StateMachine\LoadSceneState.cs" />
-     <Compile Include="Assets\Scripts\General\Infrastructure\StateMachine\ILoadingState.cs" />
-     <Compile Include="Assets\Scripts\General\Infrastructure\GameStarter.cs" />
-     <Compile Include="Assets\Scripts\General\Infrastructure\SceneLoader.cs" />
-     <Compile Include="Assets\Scripts\General\Infrastructure\Services\Factories\IGameFactory.cs" />
-     <Compile Include="Assets\Scripts\General\Infrastructure\StateMachine\IExitableState.cs" />
-     <Compile Include="Assets\Scripts\General\Infrastructure\StateMachine\GameLoopState.cs" />
-     <Compile Include="Assets\Scripts\General\SceneNames.cs" />
-     <Compile Include="Assets\Scripts\General\Infrastructure\StateMachine\BootstrapState.cs" />
-     <Compile Include="Assets\Scripts\General\Infrastructure\Services\Factories\GameFactory.cs" />
-     <Compile Include="Assets\Scripts\General\Infrastructure\BootstrapInstaller.cs" />
-     <Compile Include="Assets\Scripts\General\Infrastructure\Services\IService.cs" />
      <None Include="Assets\Scripts\General\General.asmdef" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\2021.2.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
@@ -805,12 +790,6 @@
      <Reference Include="System.Xml.Serialization">
      <HintPath>C:\Program Files\Unity\2021.2.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.Addressables">
-     <HintPath>D:\Unity Projects\TanksGB\TanksSource\Library\ScriptAssemblies\Unity.Addressables.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.ResourceManager">
-     <HintPath>D:\Unity Projects\TanksGB\TanksSource\Library\ScriptAssemblies\Unity.ResourceManager.dll</HintPath>
-     </Reference>
      <Reference Include="UnityEditor.UI">
      <HintPath>D:\Unity Projects\TanksGB\TanksSource\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
      </Reference>
@@ -819,14 +798,6 @@
      </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="GameLogic.csproj">
-      <Project>{c6a737d0-669f-5d9e-122d-e47f78a582cc}</Project>
-      <Name>GameLogic</Name>
-    </ProjectReference>
-    <ProjectReference Include="Zenject.csproj">
-      <Project>{234a5852-9b37-0183-a335-534505290bce}</Project>
-      <Name>Zenject</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

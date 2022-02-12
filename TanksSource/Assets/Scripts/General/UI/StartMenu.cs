@@ -1,15 +1,11 @@
-﻿using System;
-using Sirenix.OdinInspector;
-using TanksGB.General.Infrastructure;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 using UnityEngine.UIElements;
 
 namespace TanksGB.General.UI
 {
     public class StartMenu:MonoBehaviour
     {
-        [SerializeField] private Bootstrapper _bootstrapperPrefab;
+        [SerializeField] private GameObject _bootstrapperPrefab;
         private const string c_startBtn = "start_btn";
 
         private VisualElement _root;
